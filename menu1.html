@@ -23,6 +23,19 @@
     h1 {
       font-size:45px;
       text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ul {
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    #grid1 {
+      display: grid;
+      grid-template-columns: 150px 1fr;
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -37,12 +50,14 @@
 
 </head>
 <body>
-  <h1><a href="menu1.html" title="welcome"><font color="CornflowerBlue">댓글로인사</font><a></h1>
+  <h1><a href="menu1.html" title="welcome"><font color="CornflowerBlue">COMMENT</font></a></h1>
+  <div id="grid1">
   <ul>
-    <li><a href="index.html" title="main"><strong>MAIN PAGE</strong></a></li>
-    <li><a href="menu2.html" title="MENU2"><strong>동영상</strong></a></li>
-    <li><a href="menu3.html" title="MENU3"><strong>MENU3</strong></a></li>
+    <li><a href="index.html" title="main"><strong>MAIN</strong></a></li>
+    <li><a href="menu2.html" title="MENU2"><strong>VIDEO</strong></a></li>
+    <li><a href="menu3.html" title="MENU3"><strong>OTHER...</strong></a></li>
   </ul>
+  <div>
   <h2>COMMENT PAGE</h2>
   <p>
     <h3>댓글~~</h3>
@@ -70,6 +85,8 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
   </p>
+</div>
+</div>
   <p>
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -84,6 +101,9 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+  </p>
+  <p>
+    <script id="dsq-count-scr" src="//picatong.disqus.com/count.js" async></script>
   </p>
 </body>
 </html>

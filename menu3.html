@@ -23,6 +23,19 @@
     h1 {
       font-size:45px;
       text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ul {
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    #grid3 {
+      display: grid;
+      grid-template-columns: 150px 1fr;
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -37,21 +50,23 @@
 
 </head>
 <body>
-  <h1><a href="menu3.html" title="welcome"><font color="CornflowerBlue">MENU3</font><a></h1>
+  <h1><a href="menu3.html" title="welcome"><font color="CornflowerBlue">MENU3</font></a></h1>
+  <div id="grid3">
   <ul>
-    <li><a href="menu1.html" title="MENU1"><strong>댓글로인사</strong></a></li>
-    <li><a href="menu2.html" title="MENU2"><strong>동영상</strong></a></li>
-    <li><a href="index.html" title="main page"><strong>MAIN PAGE</strong></a></li>
+    <li><a href="menu1.html" title="MENU1"><strong>COMMENT</strong></a></li>
+    <li><a href="menu2.html" title="MENU2"><strong>VIDEO</strong></a></li>
+    <li><a href="index.html" title="main page"><strong>MAIN</strong></a></li>
   </ul>
+  <div>
   <h2>MENU3</h2>
   <p>
     <h3>피카통을 방문할 의사가 있습니까?</h3>
-    <ul>
-      <li>없는데....<input type="checkbox"></li>
-      <li>있어요!!  <input type="checkbox"></li>
-      <li>체크박스는 아무 기능도 없어요...<input type="checkbox"></li>
-    </ul>
+      없는데....<input type="checkbox"><br>
+      있어요!!  <input type="checkbox"><br>
+      체크박스는 아무 기능도 없어요...<input type="checkbox">
   </p>
+</div>
+</div>
   <p>
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">

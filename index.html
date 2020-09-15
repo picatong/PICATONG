@@ -6,16 +6,13 @@
   <meta charset="urf=8">
   <style>
     img {
-      border: 2px FloralWhite;
+      border: 20px solid FloralWhite;
+      border-left:none;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
     }
     body {
       background-color: GhostWhite;
-    }
-    strong {
-      color:cadetblue;
+      margin:0;
     }
     a {
       text-decoration: none;
@@ -23,6 +20,25 @@
     h1 {
       font-size:45px;
       text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    .saw {
+      text-decoration-color: skyblue;
+    }
+    strong {
+      color:cadetblue;
+    }
+    ul {
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -37,12 +53,13 @@
 
 </head>
 <body>
-  <h1><a href="index.html" title="welcome"><font color="CornflowerBlue">MAIN PAGE</font><a></h1>
-  <ul>
-    <li><a href="menu1.html" title="MENU1"><strong>댓글로인사</strong></a></li>
-    <li><a href="menu2.html" title="MENU2"><strong>동영상</strong></a></li>
-    <li><a href="menu3.html" title="MENU3"><strong>MENU3</strong></a></li>
-  </ul>
+  <h1><a href="index.html" title="welcome"><font color="CornflowerBlue">MAIN PAGE</font></a></h1>
+  <div id="grid">
+    <ul>
+      <li><a href="menu1.html" title="MENU1"><strong>COMMENT</strong></a></li>
+      <li><a href="menu2.html" title="MENU2"><strong>VIDEO</strong></a></li>
+      <li><a href="menu3.html" title="MENU3"><strong>OTHER...</strong></a></li>
+    </ul>
   <!--
   <h1><a href="index.html" title="welcome"><strong><font color="black">PICATONG</font><strong><a></h1>
   <ol>
@@ -51,13 +68,14 @@
     <li><a href="menu3.html" title="MENU3"><font color="green">menu3</font></a></li>
   </ol>
   -->
-  <h2>MAIN PAGE MENU</h2>
-  <p>
-    <h3>PICATONG</h3>
-      <ul>
-        <li><a href="https://cafe.naver.com/clubpicatong" target="_blankkl" title="카페카페~~>3</">피카통 카페</a></li>
-        <li><a href="https://www.youtube.com/user/picatongchannel" target="_blankkl" title="유튜브!!>.<">피카통 유튜브</a></li>
-      </ul>
-  </p>
+  <div>
+    <h2>MORE</h2>
+    <h6>더 알고싶지?</h6>
+      <p class="saw">
+        <a href="https://cafe.naver.com/clubpicatong" target="_blankkl" title="카페카페~~>3</">PICATONG CAFE</a><br>
+        <a href="https://www.youtube.com/user/picatongchannel" target="_blankkl" title="유튜브!!>.<">PICATONG YOUTUBE</a>
+      </p>
+    </div>
+  </div>
 </body>
 </html>
