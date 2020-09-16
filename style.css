@@ -2,6 +2,9 @@ img {
   border: 20px solid FloralWhite;
   border-left:none;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 body {
   background-color: GhostWhite;
